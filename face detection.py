@@ -9,7 +9,7 @@ def detect_faces(img):
         cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
     return img
 
-# Use DirectShow backend
+
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 if not cap.isOpened():
